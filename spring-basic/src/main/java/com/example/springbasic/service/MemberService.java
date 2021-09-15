@@ -3,12 +3,14 @@ package com.example.springbasic.service;
 import com.example.springbasic.domain.Member;
 import com.example.springbasic.repository.MemberRepository;
 import com.example.springbasic.repository.MemoryMemberRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 // service 에서는 비지니스 로직에 가까운 용어 선택
 // 서비스는 주로 비지니스 로직 처리
+@Service
 public class MemberService {
 
     private final MemberRepository memberRepository;
